@@ -1,0 +1,36 @@
+/* rest*/
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,div,span,a,b,i,strong,em,img{ padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; line-height:100%; font-weight:normal;}
+body{ font-size:12px;}
+li{ list-style:none;}
+body a:hover{ text-decoration:none; color:#c00;}
+i,em{ font-style:normal;}
+strong,b{ font-weight:normal;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{display:block;clear:both;content:'';}
+.clearfix{zoom:1;}
+input{outline:none; border:none 0;padding:0;}
+li{ list-style:none; vertical-align:top;}/*li里浮动,li不浮动，去3像素bug*/
+a img{ border:0; }/*a包img：去蓝色边框*/
+table,th,td,tr{padding:0;}
+table{border-collapse:collapse;}
+/*一元夺宝*/
+.one-indiana{width:1200px;margin:10px auto 0;font-family: "Microsoft Yahei";}
+.one-indiana .indiana-tit{width:350px;height:27px;background:url(http://icon.zol-img.com.cn/newshop/shop/index/indiana-tit.png) no-repeat left center;margin:29px 0 7px;}
+.indiana-list{height:171px;border:1px solid #ededed;padding:15px 0 0 15px;}
+.indiana-list li .pic{position:relative;}
+.indiana-list li{position:relative;float:left;width:180px;margin-right:16px;}
+.indiana-list li .layer-small{position:absolute;bottom:0;bottom:0;height:32px;background:#000;opacity:0.6;filter:alpha(opacity=60);width:100%;}
+.indiana-list li .text{position:absolute;left:0;bottom:0;width:180px;height:32px;line-height: 32px;text-align: center;color:#ccc;}
+.indiana-list li .text i{color:#fff;}
+.indiana-list li h4{font-size: 14px;color:#333;margin-top:10px;text-align:center;line-height: 18px;overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+.indiana-list li .hover-show{position:absolute;left:0;top:0;width:100%;height:135px;display:none;}
+.indiana-list li .hover-show .txt{position:absolute;left:40px;top:6px;background:url(http://icon.zol-img.com.cn/newshop/shop/index/txt.png) no-repeat;width:101px;height:11px;}
+.indiana-list li .hover-show .layer-big{position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.5;filter:alpha(opacity=50);}
+.indiana-list li .hover-show img{position:relative;left:40px;top:25px;}
+.indiana-list li a{*cursor: pointer;position:absolute;width:100%;height:100%;top:0;left:0;}
+.indiana-list li:hover .hover-show{display:block;}
+.indiana-list li:hover .layer-small{display:none;}
+.indiana-list li:hover .text{display:none;}
+.indiana-list li img{display:block;}

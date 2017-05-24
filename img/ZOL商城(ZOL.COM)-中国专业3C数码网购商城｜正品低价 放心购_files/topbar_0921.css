@@ -1,0 +1,238 @@
+/*@Description: 商城最新公共吊顶@author: 李月@update: 2015-08-06*/body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #333;
+	font: 12px/1.5 Arial;
+}
+
+select,input,button {
+	vertical-align: middle;
+	font-size: 100%;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+fieldset,img {
+	border: 0;
+}
+
+em {
+	font-style: normal;
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: ".";
+	font-size: 0;
+}
+
+.clearfix {
+	*zoom: 1;
+}/*global*/.zc-back-home a:hover,.zc-login a:hover,.zc-register a:hover,.zc-quick-menu li a:hover {
+	color: #c00;
+	text-decoration: underline;
+}
+
+.zc-quick-menu .zc-hd .ico,.zc-mobile .zc-hd {
+	background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat;
+}
+
+.zc-topbar {
+	position: relative;
+	z-index: 997;
+	height: 29px;
+	border-bottom: 1px solid #e6e6e6;
+	background: #f5f5f5;
+	font: 12px/29px arial;
+}
+
+.zc-login-info {
+	float: left;
+}
+
+.zc-back-home {
+	padding: 0 20px 0 0;
+}
+
+.zc-back-home a {
+	color: #666;
+	text-decoration: none;
+}
+
+.zc-login {
+	padding: 0 20px 0 0;
+	color: #666;
+}
+
+.zc-login a,.zc-register a {
+	color: #36c;
+	text-decoration: none;
+}
+
+.zc-quick-menu {
+	float: right;
+	margin: 0 -10px 0 0;
+}
+
+.zc-quick-menu li {
+	float: left;
+	margin: 0 10px;
+	height: 29px;
+	font: 12px/29px arial;
+}
+
+.zc-separator {
+	color: #ccc;
+}
+
+.zc-quick-menu li a {
+	display: inline-block;
+	color: #666;
+	text-decoration: none;
+}
+
+.zc-quick-menu .zc-hover {
+	position: relative;
+	zoom: 1;
+}
+
+.zc-quick-menu .zc-my-center {
+	margin: 0;
+}
+
+.zc-quick-menu .zc-hd {
+	position: relative;
+	padding: 0 23px 0 10px;
+}
+
+.zc-quick-menu .zc-hd .ico {
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	width: 7px;
+	height: 4px;
+	background-position: 0 -45px;
+}
+
+.zc-quick-menu .zc-hd:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+.zc-my-center-bd {
+	position: absolute;
+	top: 29px;
+	left: 0;
+	display: none;
+	padding: 3px 9px;
+	width: 88px;
+	border: 1px solid #ededed;
+	background: #fff;
+}
+
+.zc-quick-menu .zc-hover .zc-hd {
+	z-index: 2;
+	margin: 0 0 -1px;
+	padding: 0 22px 0 9px;
+	height: 30px;
+	border-right: 1px solid #ededed;
+	border-left: 1px solid #ededed;
+	background-color: #fff;
+}
+
+.zc-hover .zc-my-center-bd {
+	display: block;
+}
+
+.zc-hover .zc-my-center-bd a {
+	display: block;
+	font: 12px/28px arial;
+}
+
+.zc-quick-menu .zc-my-center-bd a:hover {
+	color: #c00;
+	text-decoration: none;
+}
+
+.zc-hover .zc-my-center-bd em {
+	color: #f33;
+}
+
+.zc-my-center-bd a:hover em {
+	color: #c00;
+}
+
+.zc-quick-menu .zc-mobile {
+	margin: 0;
+}
+
+.zc-mobile .zc-hd {
+	padding: 0 23px 0 25px;
+	background-position: 0 0;
+}
+
+.zc-quick-menu .zc-hover .zc-mobile-hd {
+	padding: 0 22px 0 24px;
+}
+
+.zc-mobile .zc-mobile-bd {
+	position: absolute;
+	top: 29px;
+	left: 0;
+	display: none;
+	padding: 20px;
+	width: 130px;
+	height: 130px;
+	border: 1px solid #ededed;
+	background: #fff;
+}
+
+.zc-mobile .zc-mobile-bd img {
+	display: block;
+}
+
+.zc-hover .zc-mobile-hd {
+	background-position: -1px 0;
+}
+
+.zc-hover .zc-mobile-bd {
+	display: block;
+}
+
+.zc-quick-menu .zc-hover .ico {
+	border-color: #bbb transparent transparent;
+	-webkit-transition: -webkit-transform .2s ease-in;
+	-moz-transition: -moz-transform .2s ease-in;
+	-o-transition: -o-transform .2s ease-in;
+	transition: transform .2s ease-in;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-backface-visibility: hidden;
+}
+
+.zc-service-tel {
+	position: absolute;
+	top: 29px;
+	right: 0;
+	display: none;
+	padding: 3px 9px;
+	width: 80px;
+	border: 1px solid #ededed;
+	background: #fff;
+	text-align: right;
+	font: 12px/28px arial;
+}
+
+.zc-hover .zc-service-tel {
+	display: block;
+} 

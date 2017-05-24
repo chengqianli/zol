@@ -1,0 +1,305 @@
+/*
+@Description: ZOL 主页
+@author: 文旭东
+@update: 2016-9-18
+*/
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 'Microsoft YaHei',\5b8b\4f53;color:#333;outline:0;}
+html body{font:12px/1.14 'Microsoft YaHei',\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+img{vertical-align: middle;}
+
+/* 顶部banner */
+.top-banner{height: 90px;margin: 10px 0;}
+.top-banner  img{width: 100%;height: 90px;vertical-align: middle;}
+.wrapper{width: 1200px;margin: 0 auto;}
+
+/* 活动广告 */
+.ad-div{width: 1200px;height: 90px;padding-top: 20px;}
+.ad-div img{vertical-align: middle;}
+
+/* version */
+.version{position: relative;}
+.version-left,.version-right{position: absolute;top: 0;width: 350px;height: 730px;background-position: center;background-repeat: no-repeat;}
+
+.version-left{left: -350px;background-image: url(http://icon.zol-img.com.cn/newshop/shop/index/version-left.jpg);}
+.version-right{right: -350px;background-image: url(http://icon.zol-img.com.cn/newshop/shop/index/version-right.jpg);}
+
+/* 焦点内容 */
+.main-left,.main-right{float:right;}
+/* 右侧 */
+.main-right{width:240px;height: 439px;}
+.main-right.local{height: 443px;}
+/* 商城快报
+.mall-notice{border: 1px solid #ededed;}
+.mall-notice .title{padding-left: 42px;height: 50px;line-height: 52px;border-bottom: 1px dashed #ededed;font-size: 14px;color: #333;font-weight: normal;background: url(../images/mall-notice.png) no-repeat 20px center;}
+.mall-notice ul{padding: 15px 20px;}
+.mall-notice ul li{line-height: 24px;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;}
+.mall-notice ul li a{color: #666;}
+.mall-notice ul li a:hover{text-decoration: underline;}
+ */
+ /* 手工位 */
+.main-right .manual{width: 240px;height:219px;margin-bottom: 1px;}
+.main-right.local .manual{height: 221px;}
+.main-right .manual a{display: block;height:100%;}
+.main-right .manual img{width: 100%;height: 100%;}
+/* 左侧 */
+.main-left{margin-right: 9px;}
+/* 焦点图 */
+.focus-box{width: 740px;height: 290px;overflow: hidden;position: relative;}
+.main-left.local .focus-box{width: 951px;}
+.focus-box .focus-con{width: 740px;height: 290px;overflow: hidden;position: relative;}
+.focus-box .focus-con img{vertical-align: middle;}
+/* bxSlider */
+.bx-controls-direction a{width:39px;height:65px;position:absolute;top:50%;margin-top:-32px;background-image: url(http://icon.zol-img.com.cn/newshop/shop/index/focus-arrow.png);background-repeat: no-repeat;}
+.bx-controls-direction .bx-prev{left:0;background-position:0 0;}
+.bx-controls-direction .bx-next{right:0;background-position:0 -69px;}
+.bx-controls-direction .bx-prev:hover{background-position:-41px 0;}
+.bx-controls-direction .bx-next:hover{right:0;background-position:-41px -69px;}
+.bx-pager{position:absolute;left:-5px;bottom:10px;width:100%;text-align:right;}
+.bx-pager-item{display:inline-block;*display:inline;*zoom:1;width:18px;height:18px;margin-right: 5px;}
+.bx-pager-item a{display:block;width:18px;height:18px;line-height: 18px;text-align:center;font-size: 12px;color: #fff;background-repeat:no-repeat;background-image:url(http://icon.zol-img.com.cn/newshop/shop/index/focus-index.png);background-position:0 0;}
+.bx-pager-item a.active{background-position:0 -20px;}
+.bx-pager-item a:hover{color: #fff;}
+/* 推荐内容 */
+.main-recommend-list{margin:-1px 0 0 1px;}
+.main-recommend-list li{display: inline;float: left;width:169px;height: 149px;padding-left: 15px;border: 1px solid #e6e6e6;text-align: right;margin-left: -1px;}
+.main-left.local .main-recommend-list li{width:174px;height: 152px;}
+.main-recommend-list .name,.main-recommend-list .price{text-align: left;font-family:'Microsoft YaHei';white-space: nowrap;text-overflow:ellipsis;overflow: hidden;}
+.main-recommend-list .name{height: 24px;line-height: 24px;font-size: 16px;margin-top: 10px;}
+.main-recommend-list .name a{color: #333;}
+.main-recommend-list .price{height: 22px;line-height: 22px;font-size: 14px;color: #d33f3f;}
+.main-recommend-list .pic{display: inline-block;width: 120px;height: 90px;transition:.5s all ease;-webkit-transition:.5s all ease;}
+.main-recommend-list .pic img{width: 120px;height: 90px;vertical-align: top;}
+.main-recommend-list .pic:hover{transform:translateX(-5px);}
+/* 公用 title */
+.module-title{height: 44px;}
+.module-title .title{float: left;padding-left: 15px;line-height: 44px;font-size: 24px;font-weight:normal;background: url(http://icon.zol-img.com.cn/newshop/shop/index/module-title.png) no-repeat left center;}
+.module-title .title.f18{font-size: 18px;}
+.module-title .title.bl-no{background:none;}
+.module-title .more{float: right;height: 34px;line-height: 34px;padding-top:10px;color: #d9d9d9;margin-right:-10px;}
+.module-title .more a{font-size: 12px;color: #666;margin: 0 15px;}
+.module-title .more a span{font-family: SimSun;}
+.module-title .more a:hover{text-decoration: underline;color: #c00;}
+.module-title .address{float: right;padding-top: 7px;}
+.module-title .address .city-location{margin: 0;}
+.module-title .other{float:right;height: 44px;line-height: 44px;padding-left: 22px;margin-right: 10px;font-size: 14px;color: #666;background:url(http://icon.zol-img.com.cn/newshop/shop/index/other.png) no-repeat left center;}
+.ztuan-section,.rush-section,.mobile-section,.city-wide-section,.computer-section,.recommend-section{margin-top: 12px;}
+
+
+/* 精品团购 */
+.ztuan-list{margin-left: 1px;}
+.ztuan-list li{float: left;width: 298px;height:213px;padding-bottom: 2px;border: 1px solid #ededed;margin-left: -1px;}
+.ztuan-list li a{display: block;width: 298px;height: 179px;border-bottom:1px dashed #ededed;}
+.ztuan-list li img{vertical-align: middle;}
+.ztuan-list .count{height: 33px;line-height: 33px;text-align: center;font-size: 12px;color: #999;}
+.ztuan-list li:hover{padding-bottom: 0;border-bottom: 3px solid #ce1a1b;}
+
+/* 限时抢购 */
+.rush-list li{float: left;width: 399px;height:210px;padding-bottom: 2px;border: 1px solid #ededed;margin-left: -1px;}
+.rush-list .pic{float: left;width:150px;height:150px;margin:20px 0 0 25px;text-align:center;}
+.rush-list .pic img{display:block;vertical-align: middle;margin:0 auto;}
+.rush-list .word{margin:19px 0 0 200px;}
+.rush-list .title{font-size: 16px;line-height: 22px;font-weight: normal;height: 48px;overflow: hidden;word-break:break-all;word-wrap:break-word;}
+.rush-list .title a{color: #000;}
+.rush-list .title a:hover{text-decoration: underline;}
+.rush-list .price{font-size: 14px;color: #ce1a1b;line-height: 34px;}
+.rush-list .price span{font-size: 20px;line-height: 26px;}
+.rush-list .prime-price{font-size: 12px;color: #999;text-decoration: line-through;line-height: 22px;}
+.rush-list .operation{margin-top:25px;height: 22px;}
+.rush-list .save,.rush-list .buy-btn{float: left;}
+.rush-list .save{height: 20px;line-height: 20px;padding: 0 10px;font-size: 12px;color:#ce1a1b;border: 1px solid #ce1a1b;}
+.rush-list .buy-btn{width: 76px;height: 22px;line-height: 22px;text-align: center;font-size: 12px;color: #fff;background-color: #ce1a1b;}
+.rush-list .buy-btn:hover{background-color: #b1191a;}
+.rush-list .countdown{margin-top: 5px;}
+.rush-list li:hover{padding-bottom: 0;border-bottom: 3px solid #ce1a1b;}
+
+/* 手机同城精选 */
+.mobile-region{padding: 0 14px 14px;border: 1px solid #ebebeb;}
+/* 头部 */
+.mobile-head{height:40px;padding: 10px 0;}
+.mobile-head .stores-logo{float: left;}
+.stores-logo a{margin-right: 10px;}
+.stores-logo img{height:40px;vertical-align: middle;}
+.mobile-head .service-con{float: right;line-height:40px;font-size: 16px;color: #333;}
+.service-con span{display: inline-block;height: 26px;line-height: 26px;border: 1px solid #333;font-size: 12px;color: #333;padding: 0 10px;margin-right: 8px;}
+/* 精品 */
+.boutique-list{margin-left:-5px;}
+.boutique-list li{float: left;height:235px;width:348px;margin-left: 5px;}
+.boutique-list .wide{width:464px;}
+.boutique-list img{vertical-align: middle;}
+/* 手工位 */
+.mobile-manual-list{margin:5px 0 0 -5px;}
+.mobile-manual-list li{float:left;width: 230px;height: 230px;margin-left: 5px;}
+.mobile-manual-list li img{vertical-align: middle;width: 100%;height: 100%;}
+.boutique-list li a:hover,.mobile-manual-list li a:hover{opacity: .9;filter:alpha(opacity=90);}
+/* 热卖 */
+.mobile-hot-box .module-title{border-left: 1px solid #ededed;border-right: 1px solid #ededed;}
+.mobile-hot-list{margin-left: 1px;}
+.mobile-hot-list li{float: left;width: 221px;height: 292px;border: 1px solid #ededed;margin-left: -1px;padding: 9px;position: relative;}
+.mobile-hot-list .special{padding-right: 8px;}
+.mobile-hot-list li:hover{border-color: #ce1a1b;position: relative;z-index: 2;}
+.mobile-hot-list .pic{display: block;height: 220px;position: relative;}
+.mobile-hot-list .pic img{vertical-align: middle;}
+.mobile-hot-list .deliver-time{height: 24px;line-height: 24px;padding: 0 7px;background-color: #d54546;font-size: 12px;color: #fff;position: absolute;right: 0;top: 0;z-index: 5;}
+/* 倒计时 */
+.mobile-hot-count{width: 100%;height: 32px;position: absolute;left: 0;bottom: 0;}
+.mobile-hot-count .layer{position: absolute;left: 0;top: 0;width: 100%;height: 32px;background-color: #000;opacity: .5;filter:alpha(opacity=50);}
+.mobile-hot-count .count-num{padding-left: 30px;height: 32px;line-height: 32px;font-size: 12px;color: #fff;position: absolute;left: 0;top:0;background:url(http://icon.zol-img.com.cn/newshop/shop/index/clock.png) no-repeat 10px center;}
+.mobile-hot-list .name{height: 40px;line-height: 20px;font-size: 12px;overflow: hidden;font-weight: normal;margin-top: 5px;}
+.mobile-hot-list .name a{color: #333;}
+.mobile-hot-list .name a:hover{text-decoration: underline;color: #ce1a1b;}
+/* 价格 */
+.mobile-hot-detail{height: 18px;margin-top: 7px;}
+.mobile-hot-detail .price,.mobile-hot-detail .prime-price{float: left;height: 18px;line-height: 18px;}
+.mobile-hot-detail .price{font-size: 14px;color: #ce1a1b;}
+.mobile-hot-detail .prime-price{font-size: 12px;color: #a6a6a6;margin-left: 10px;text-decoration: line-through;}
+.mobile-hot-detail .icon-box{float: right;}
+.mobile-hot-detail .icon{display: inline-block;height: 16px;line-height: 16px;padding: 0 5px;font-size: 12px;color: #f00;border: 1px solid #f33;}
+/* 品牌推荐 */
+.brands-con{padding:3px 3px 3px 4px;border: 1px solid #ededed;margin-top: -1px;}
+.brands-con li{float: left;width:118px;height: 60px;border: 1px solid transparent;margin-left: -1px;}
+.brands-con img{vertical-align: middle;}
+.brands-con li:hover{border-color: #f5f5f5;}
+
+/* 电脑数码 */
+/* 左侧 */
+.computer-left{float: left;width: 360px;height: 420px;position: relative;}
+.computer-left .pic img{vertical-align: middle;}
+/* .keyword-box{width: 360px;height: 82px;position: absolute;left:0;bottom: 0;}
+.keyword-box .layer{width: 100%;height: 100%;position: absolute;left: 0;top: 0;background-color: #fff;opacity: .5;filter:alpha(opacity=50);z-index: 1;}
+.keyword-con{position: absolute;left: 0;top: 0;z-index: 2;padding: 13px 20px;width: 320px;height: 56px;overflow: hidden;}
+.keyword-con a{float: left;font-size: 14px;line-height: 28px;color: #666;margin-right: 15px;white-space: nowrap;}
+.keyword-con a:hover{color: #ce1a1b;}
+ */
+ /* 右侧 */
+.computer-right{float: right;width: 840px;height: 420px;position: relative;}
+.waretype-tab{position: absolute;top: -34px;left: 1px;}
+.waretype-tab li{float: left;width: 108px;text-align: center;height: 32px;line-height: 32px;padding-top: 1px;margin-left: -1px;border: 1px solid #ededed;font-size: 16px;color: #333;background-color: #fff;}
+.waretype-tab li.cur{padding-top: 0;border-top:2px solid #ce1a1b;height: 33px;border-bottom: 0 none;}
+/* 切换内容 */
+.waretype-con{width: 840px;height: 420px;}
+.waretype-con .item{width: 840px;height: 420px;display: none;}
+.waretype-con .item.cur{display: block;}
+/* 热门 */
+/* 热门左侧 */
+.hot-region-left{float: left;width:840px;height: 420px;}
+/* 热门焦点图 */
+.hot-region-focus{width:838px;height: 218px;border: 1px solid #ededed;overflow: hidden;position: relative;}
+.hot-region-focus .bx-pager{position:absolute;left:0;bottom:20px;width:100%;text-align:center;}
+.hot-region-focus .bx-pager-item{width:8px;height:8px;margin:0 5px;}
+.hot-region-focus .bx-pager-item a{width:8px;height:8px;line-height: 18px;font-size:0;line-height: 0;background-repeat:no-repeat;background-image:url(http://icon.zol-img.com.cn/newshop/shop/index/hot-focus.png);background-position:0 0;}
+.hot-region-focus .bx-pager-item a.active{background-position:0 -10px;}
+/* 热门产品 */
+.hot-region-ware{margin:-1px 0 0 1px;}
+.hot-region-ware li{float: left;width: 209px;height: 199px;border: 1px solid #ededed;margin-left: -1px;}
+.hot-region-ware li:hover{border-color: #ce1a1b;position: relative;z-index: 2;}
+.hot-region-ware li.last{width: 208px;}
+/* 热门右侧
+.hot-region-right{float: left;width: 238px;height: 418px;border: 1px solid #ededed;margin-left: -1px;}
+.hot-ranking-tab{padding-left: 33px;border-bottom:1px solid #ededed;background:url(../images/ranking.png) no-repeat 9px center;}
+.hot-ranking-tab li{float: left;width: 62px;height: 30px;line-height: 30px;text-align: center;font-size: 14px;color: #333;padding-top: 1px;border-left: 1px solid #ededed;border-top: 1px solid #ededed;margin-top: -1px;background-color: #fff;}
+.hot-ranking-tab li.cur{padding-top: 0;border-top: 2px solid #ce1a1b;}
+.hot-ranking-con{width:238px;height: 375px;}
+.hot-ranking-con .sub{width:238px;height: 375px;display: none;}
+.hot-ranking-con .sub.cur{display: block;}
+排行列表
+.hot-ranking-list li{height: 65px;padding: 10px 10px 0 36px;position: relative;}
+.hot-ranking-list .pic{float: left;width: 63px;height: 63px;border: 1px solid #ededed;}
+.hot-ranking-list .word{margin-left: 75px;}
+.hot-ranking-list .name{height: 40px;line-height: 20px;font-size: 12px;overflow: hidden;font-weight: normal;}
+.hot-ranking-list .name a{color: #333;}
+.hot-ranking-list .name a:hover{text-decoration: underline;}
+.hot-ranking-list .price{font-size: 12px;line-height: 22px;color: #ce1a1b;}
+.hot-ranking-list .rank-num{width: 18px;height: 18px;line-height: 18px;text-align: center;background-color: #ce1a1b;position: absolute;left: 9px;top: 10px;font-size: 12px;color: #fff;}
+ */
+ /* 产品系列 */
+.product-series{margin-left: 2px;}
+.product-series li{float: left;width: 188px;height: 189px;border: 1px solid #ededed;margin: -1px 0 0 -1px;padding: 10px;}
+.product-series .pic{display: block;width: 160px;height: 120px;margin: 0 auto 3px;}
+.product-series .pic img{vertical-align: middle;}
+.product-series .name{height: 40px;line-height: 20px;font-size: 12px;overflow: hidden;word-wrap:break-word;word-break:break-all;font-weight: normal;margin-bottom: 5px;}
+.product-series .name a{color: #333;}
+.product-series .name a:hover{text-decoration:underline;color: #ce1a1b;}
+.product-detail{height: 18px;}
+.product-detail .price,.product-detail .prime-price{float: left;height: 18px;line-height: 18px;}
+.product-detail .price{font-size: 14px;color: #ce1a1b;}
+.product-detail .prime-price{font-size: 12px;color: #a6a6a6;margin-left: 10px;text-decoration: line-through;}
+.product-detail .icon-box{float: right;}
+.product-detail .icon{display: inline-block;height: 16px;line-height: 16px;padding: 0 5px;font-size: 12px;color: #f00;border: 1px solid #f33;}
+
+/* 楼层定位 */
+.left-floor{position: fixed;left: 50%;top:180px;width:75px;margin-left: -685px;}
+.left-floor .title{height: 30px;line-height: 30px;text-align: center;color: #fff;font-size: 14px;background-color: #ce1a1b;margin-bottom: 1px;}
+.left-floor-list{padding: 0 4px;border:1px solid #e1e1e1;border-top: 0 none;background-color: #fff;}
+.left-floor-list li{height: 34px;line-height: 34px;position: relative;border-bottom: 1px solid #eee;}
+.left-floor-list li.last{border-bottom:0 none;}
+.left-floor-list li a{position: absolute;left:-5px;top:0;width:40px;height: 34px;padding-left: 35px;color: #999;background: url(http://icon.zol-img.com.cn/newshop/shop/index/left-floor.png) no-repeat;}
+.left-floor-list li .icon1{background-position:12px 8px;}
+.left-floor-list li .icon2{background-position:12px -21px;}
+.left-floor-list li .icon3{background-position:12px -49px;}
+.left-floor-list li .icon4{background-position:12px -82px;}
+.left-floor-list li .icon5{background-position:12px -115px;}
+.left-floor-list li .icon6{background-position:12px -148px;}
+.left-floor-list li .icon7{background-position:12px -178px;}
+.left-floor-list li a:hover{background-color: #ce1a1b;color: #fff;}
+.left-floor-list li .icon1:hover{background-position:-25px 8px;}
+.left-floor-list li .icon2:hover{background-position:-25px -21px;}
+.left-floor-list li .icon3:hover{background-position:-25px -49px;}
+.left-floor-list li .icon4:hover{background-position:-25px -82px;}
+.left-floor-list li .icon5:hover{background-position:-25px -115px;}
+.left-floor-list li .icon6:hover{background-position:-25px -148px;}
+.left-floor-list li .icon7:hover{background-position:-25px -178px;}
+
+
+/*二维码 */
+.qrcode-box{width: 136px;height: 162px;padding-top: 56px;text-align: center;position: fixed;right: 50%;top: 300px;margin-right: -600px;background:url(http://icon.zol-img.com.cn/newshop/shop/index/qr-code.png) no-repeat center;}
+.qrcode-box img{vertical-align: middle;width: 100px;height: 100px;margin-bottom: 5px;}
+.qrcode-box p{font-size: 12px;line-height: 14px;font-weight: bold;color: #fff;}
+.qrcode-box.local{top:300px;}
+/* 倒计时 */
+.countdown{height: 32px;line-height: 32px;text-align: center;}
+.countdown span{ color:#999; padding:0 2px;}
+.countdown b{ width:16px; height:16px; display:inline-block;var;vertical-align: middle;margin-top:-3px;background: url(http://icon.zol-img.com.cn/zol_shop/qianggou/2012v1/time.png) no-repeat center; text-indent:-9999em;}
+.countdown .n1{ background-position:0 0;}
+.countdown .n2{ background-position:0 -21px;}
+.countdown .n3{ background-position:0 -42px;}
+.countdown .n4{ background-position:0 -63px;}
+.countdown .n5{ background-position:0 -82px;}
+.countdown .n6{ background-position:0 -102px;}
+.countdown .n7{ background-position:0 -123px;}
+.countdown .n8{ background-position:0 -142px;}
+.countdown .n9{ background-position:0 -162px;}
+.countdown .n0{ background-position:0 -182px;}
+.countdown .n00{ background-position:0 -203px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

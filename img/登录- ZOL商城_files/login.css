@@ -1,0 +1,191 @@
+/*
+@Description: 中关村商城登录注册css
+@author: liyue
+@update: 2014-01-010
+*/ 
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;}
+body{font:12px/1.5 Arial; color:#333;}
+select,input,button{vertical-align:middle;font-size:100%;}
+ul,ol{list-style:none;}
+fieldset,img{border:0;}
+em{font-style:normal;}
+.clearfix:after{content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix{*zoom:1}
+
+/* global */
+a{ color:#134ba0; text-decoration:none;}
+a:hover,.download-list a:hover,.footer .about a:hover,.header .about a:hover{ color:#c00; text-decoration:underline;}
+.login-index{ background:#fafafa;}
+.login-index .footer{ margin:70px auto 0;}
+.wrapper{ width:990px; margin:0 auto;}
+input:focus{ outline:none;}
+
+/* bg */
+.login-layer-btn,.submit-loading,.login-foot .sina,.login-foot .qq,.login-foot .alipay,.login-foot .baidu,.login-wrong-tips,.case-tips .ico,.form-item .remove,.register-btn{ background:url(https://login.zol.com/image/bg.png) no-repeat;}
+.download-list a,.fast-login-list a,.register-tab span,.get-captcha,.register-form .right-tips,.register-form .wrong-tips{ background:url(https://login.zol.com/image/login-bg.png) no-repeat;}
+
+/* header */
+.header{ padding:20px 0;}
+.logo{ float:left;}
+.header .about{ float:right; margin:0 -10px 0 0; padding:23px 0 0; color:#ccc;}
+.header .about a{ margin:0 10px; color:#666;}
+
+/* footer */
+/*.footer{ margin:50px 0 0; padding:12px 0 25px; border-top:1px solid #dcdcdc; background: #fff; position: fixed;bottom: 0;left: 0;width: 100%;}*/
+.footer{ margin:50px 0 0; padding:12px 0 25px; border-top:1px solid #dcdcdc;}
+.footer .about{ float:left; margin:0 0 0 -10px; color:#ccc;}
+.footer .about a{ margin:0 10px; color:#666;}
+.copyright{ float:right; color:#666;}
+
+/* login-wrap*/
+.login-wrap{ margin:30px 0 0; border:1px solid #e6e6e6; background:#fff;}
+.login-wrap .ad-div{ float:left;}
+.login-wrap .ad-div img{ display:block;}
+.login-layer{ float:right; padding:0 85px 0 0; width:290px;}
+.login-head{ position:relative; zoom:1; padding:20px 0 0;}
+.login-head h3{ height:28px; overflow:hidden; font:18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; color:#666;}
+.login-head .reg-now{ position:absolute; top:23px; right:0; font:12px/28px "Arial";}
+.login-content{ padding:30px 0 0; position:relative; zoom:1;}
+.form-item{ position:relative; margin:0 0 7px; padding:8px 5px; height:22px; border:1px solid #ccc;}
+.form-item .label{ position:absolute; top:8px; left:5px; font:14px/22px "Arial"; color:#aaa;}
+.form-item .text{ display:block; width:278px; height:22px; font:14px/22px "Arial"; border:0 none;}
+.form-item-wrong{ border:1px solid #f33;}
+.form-item .remove{ position:absolute; top:9px; right:6px; display:none; width:21px; height:21px; background-position:-157px -107px; cursor:pointer;}
+.form-other{ padding:0 0 17px; overflow:hidden; zoom:1;}
+.autologon{ float:left; color:#999;}
+.autologon input{ margin:0 8px 0 0; +margin:-1px 5px 0 -3px; _margin:-3px 5px 0 -4px;}
+.form-other a{ float:right;}
+.form-other a:hover{ color:#c00;}
+.login-layer-btn, .submit-loading{ display:block; margin:0 0 10px; width:290px; height:40px; font:bold 14px/40px "Arial"; color:#fff; text-align:center; border:0 none; background-position:0 0;}
+.login-layer-btn{ cursor:pointer;}
+.login-layer-btn:hover{ background-position:0 -41px;}
+.login-wrong-tips{ display:none; position:absolute; top:1px; left:0; padding:0 0 0 25px; width:263px; height:22px; font:12px/22px "Arial"; color:#f33; border:1px solid #f99; background-color:#fff2f2; background-position:-270px -89px;}
+.login-wrong-tips a{ margin:0 6px;}
+.case-tips{ display:none; position:absolute; top:26px; left:30px; padding:0 10px; border:1px solid #ffd24c; background:#fff5d6; font:12px/28px "Arial"; color:#666; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+.case-tips .ico{ position:absolute; top:-5px; left:10px; display:block; width:9px; height:5px; font:0/0 "Arial"; background-position:-212px -89px;}
+.username{ z-index:2; margin:0 0 10px;}
+.account-list{ position:absolute; top:38px; left:-1px; width:288px; border:1px solid #ccc; background:#fff;}
+.account-list li{ padding:0 6px; height:30px; font:12px/30px "Arial"; color:#333; cursor:pointer;}
+.account-list li:hover, .account-list .hover{ background:#ededed;}
+.login-foot{ margin:10px 0 0;}
+.login-foot span{ float:left; font:12px/38px "Arial"; color:#666; padding:0 2px 0 0;}
+.login-foot .sina, .login-foot .qq, .login-foot .alipay, .login-foot .baidu{ float:left; margin:0 12px 0 0; width:38px; height:38px; text-indent:-9999em; overflow:hidden;}
+.login-foot .sina{ background-position:0 -82px;}
+.login-foot .qq{ background-position:-39px -82px;}
+.login-foot .alipay{ background-position:-78px -82px;}
+.login-foot .baidu{ background-position:-117px -82px;}
+.login-foot .sina:hover{ background-position:0 -121px;}
+.login-foot .qq:hover{ background-position:-39px -121px;}
+.login-foot .alipay:hover{ background-position:-78px -121px;}
+.login-foot .baidu:hover{ background-position:-117px -121px;}
+
+/* download-list */
+.download-list{ padding:90px 0 0;}
+.download-list a{ display:inline-block; padding:0 0 0 8px; margin:0 10px 0 0; font:12px/32px "Arial"; background-position:-167px -432px; color:#afaeae;}
+
+/* register-wrap */
+.register-wrap{ padding:0 0 100px; border:1px solid #e6e6e6;width:980px;margin:auto;}
+.register-wrap .title{ padding:16px 0 16px 90px; background:#fafafa; font:18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; color:#999;}
+
+.register-module{ float:left; padding:30px 0 0 89px; width:500px;}
+.register-tab{ height:39px; border-bottom:1px solid #e6e6e6;}
+.register-tab li{ float:left; position:relative; margin:0 -1px; width:250px; border:1px solid #e6e6e6; border-bottom:0 none; background:#fafafa; text-align:center; cursor:pointer;}
+.register-tab .current{ margin:0 -1px -1px; padding:0 0 2px; border-top:2px solid #e02d2d; background:#fff; cursor:default;}
+.register-tab .current span{ color:#c00; line-height:36px; }
+.register-tab span{ display:inline-block; font:18px/38px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";}
+.register-tab .phone-number{ padding:0 0 0 20px; background-position:-158px -281px;}
+.register-tab .email{ padding:0 0 0 32px; background-position:-146px -380px;}
+.register-tab .current .phone-number{ background-position:-158px -235px;}
+.register-tab .current .email{ background-position:-146px -326px;}
+
+.fast-login{ float:right; margin:30px 0 0; padding:0 80px 0 25px; width:170px; border-left:1px solid #f5f5f5;}
+.fast-login p{ margin:-6px 0 0; font:12px/24px "Arial"; color:#666;}
+.fast-login p a{ margin:0 6px;}
+.fast-login-list a{ display:block; margin:15px 0 0; width:170px; height:36px; text-indent:-9999em; overflow:hidden; zoom:1;}
+.fast-login-list a:hover{ opacity:0.8; filter:alpha(opacity=80);}
+.fast-login-list .sina{ background-position:0 0;}
+.fast-login-list .qq{ background-position:0 -37px;}
+.fast-login-list .alipay{ background-position:0 -74px;}
+.fast-login-list .baidu{ background-position:0 -111px;}
+
+
+.register-phone-number,.register-email{ padding:30px 0 0;}
+.register-form{ position:relative; margin:0 0 42px; padding:0 0 0 83px; zoom:1;}
+.register-form .label{ position:absolute; top:0; left:0; width:83px; font:14px/40px "Arial"; text-align:right; color:#666;}
+.register-form .label .xh{ padding:0 7px 0 0; font-size:12px; font-family:"Simsun"; color:#f30;}
+.register-form .text{ display:block; margin:0 10px 0 0; padding:8px 5px; width:278px; height:22px; border:1px solid #ccc;}
+.register-form .wrong-text{ border:1px solid #ff3333; background:#fff2f2;}
+.register-form .sms-captcha .text{ float:left; width:158px;}
+.sms-captcha .loading{ float:left; width:108px; height:38px; border:1px solid #ccc; background:#e6e6e6; font:12px/38px "Arial"; text-align:center ;-moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; color:#999;}
+.sms-captcha .hint{ float:left; padding:0 0 0 10px; font:12px/40px "Arial";}
+.get-captcha{ float:left; width:110px; height:40px; border:0 none; background-position:0 -148px; font:12px/40px "Arial"; color:#666; cursor:pointer; background: #f8f8f8; border: 1px solid #ccc;}
+.get-captcha:hover{background:#f2f2f2;}
+.register-form .tips{ position:absolute; top:47px; left:83px; color:#aaa;}
+.register-form .right-tips{ position:absolute; top:12px; left:383px; width:15px; height:15px; font:0/0 "Arial"; background-position:-155px -162px;}
+.register-form .wrong-tips{ position:absolute; top:0; left:383px; padding:0 0 0 20px; font:12px/40px "Arial"; color:#ff3333; background-position:-155px -184px; white-space:nowrap;}
+.register-form .wrong-tips a{ margin:0 6px;}
+.agreement{ display:block; padding:0 0 0 83px; height:32px; font:12px/32px "Arial"; color: #999;}
+.agreement input{ margin:0 8px 0 0; +margin:-1px 5px 0 -3px; _margin:-3px 5px 0 -4px;}
+.register-btn{ display:block; margin:20px 0 0 83px; width:290px; height:40px; font:bold 14px/40px "Arial"; color:#fff; text-align:center; border:0 none; background-position:0 0; cursor:pointer;}
+.register-btn:hover{ background-position:0 -41px;}
+
+.register-form .email{ position:relative; zoom:1; z-index:2;}
+.register-form .account-list{ top:40px; left:0;}
+
+.email-captcha .text{ float:left; width:158px;}
+.captcha-img{ float:left; margin:0 10px 0 0;}
+.captcha-img img{ display:block; border:1px solid #ccc;}
+.captcha-change{ float:left; font:12px/40px "Arial";}
+
+/*
+@Description: 中关村商城登录注册css
+@author: hanjw
+@update: 2014-06-24
+*/
+
+/*header*/
+.header{padding-top: 14px;} 
+.header .logo a { float:left; }
+.header .logo a:hover { color:#666; text-decoration:none; }
+.header .logo a img { float:left;}
+.header .logo p { float:left; margin:8px 0 0 8px; padding-left:10px; font:14px/44px simsun; color:#666; border-left:1px solid #e6e6e6; cursor:pointer; }
+
+/*login-wrap*/
+.login-wrap{margin-top: 26px;}
+
+/*register-bar*/
+.register-bar{float: right; padding: 21px 0 0; font-size: 14px; line-height: 22px; *width: 220px;}
+.register-bar a{float: right; height: 16px; padding: 3px 10px; color: #c00; font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";}
+.register-bar a:hover{color: #fff; background-color: #cd1f1f; text-decoration: none;}
+
+/*login-head*/
+.login-head .otherLogin-bar{float: right; padding: 0 0 0 17px; background: url(https://login.zol.com/image/shop_login_bg.png) no-repeat -276px -137px; color: #333; line-height: 28px;}
+.login-head .mobileLogin-bar{background-position: -280px -113px;}
+.login-head .otherLogin-bar:hover{color: #c00;}
+
+/*form-item*/
+.login-content .focus{border-color: #c00;}
+
+/*mobileLogin-content*/
+.mobileLogin-content .phone-number{ margin:0 0 10px; z-index:2;}
+.mobileLogin-content .phone-number .text{ width:173px;}
+.mobileLogin-content .phone-number .btn,.captcha-loading{ position:absolute; top:0; right:0; width:109px; height:38px; font:12px/38px arial; background:#f8f8f8; border:0 none; border-left:1px solid #ccc; cursor:pointer;}
+.mobileLogin-content .phone-number .btn:hover{ background:#f2f2f2;}
+.mobileLogin-content .captcha-loading{ cursor:default; background:#f2f2f2; color:#999; text-align:center;}
+
+
+.tippopHover{background:#ededed;}
+
+.captcha-item{ overflow:hidden; zoom:1; margin:10px 0 7px; padding:0; height:40px; border:0 none;}
+.captcha-item .text{ float:left; width:168px;  padding: 8px 5px; height: 40px; border: 1px solid #ccc;}
+.captcha-item img{ float:right;}
+
+/* 2016-09-14 */
+.collaborate{width: 290px; text-align: center; margin-top: 15px;color: #666666;}
+.collaborate p {float: left;}
+.xian{float: left;height: 1px;background: #f0f0f0;width: 100px;margin-top: 7px;}
+.xian:first-child{margin-right:9px;}
+.xian:last-child{margin-left:9px;}
+.login-foot .weixin{float: left;margin: 0 12px 0 25px;width: 38px;height: 38px;text-indent: -9999em;overflow: hidden;background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 0 no-repeat;}
+.login-foot .weixin:hover{background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 -38px no-repeat;}
+.fast-login-list .weixin {background: url(http://icon.zol-img.com.cn/newshop/login/weixin.png) 0 0 no-repeat; background-size: 100%;}

@@ -1,0 +1,79 @@
+/*
+@Description: ÉÌ³ÇµÇÂ¼µ¯¿ò
+@author: liyue
+@update: 2013-12-18
+*/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+body {font:12px/1.5 Arial; color:#333;}
+select,input,button {vertical-align:middle;font-size:100%;}
+ul,ol {list-style:none;}
+fieldset,img {border:0;}
+em {font-style:normal;}
+.clearfix:after {content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix {*zoom:1}
+a{ text-decoration:none;}
+a:hover{ color:#c00; text-decoration:underline;}
+.login-head .close,.login-layer-btn,.submit-loading,.login-foot .sina,.login-foot .qq,.login-foot .alipay,.login-foot .baidu,.login-wrong-tips,.case-tips .ico,.login-hd .phone-login,.login-hd .common-login{ background:url(http://icon.zol.com.cn/newshop/login/shop_login_bg.png) no-repeat;}
+
+.login-layerbox-overlay{ background:#000; filter:alpha(opacity=50); opacity:0.5; -moz-opacity:0.5; width:100%; height:100%; position:fixed; top:0; left:0; z-index:10001; _position:absolute; _height:expression(documentElement.offsetHeight +"px"); _top:expression(documentElement.scrollTop +"px");}
+
+.login-layer-box{ position:fixed; top:50%; left:50%; margin:-197px 0 0 -170px; padding:5px; _position:absolute; background:rgba(0,0,0,0.3); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#4d000000,endcolorstr=#4d000000,gradientType=1); z-index:10002;}
+:root .login-layer-box{ filter:none;}
+.login-layer{ width:330px; background:#fff;}
+.login-head{ position:relative; zoom:1; padding:8px 10px; background:#fafafa; border-bottom:1px solid #eee;}
+.login-head h3{ height:22px; overflow:hidden; font: bold 16px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color:#666; padding:0 0 0 10px;}
+.login-head .close{ position:absolute; top:9px; right:6px; display:block; width:21px; height:21px; background-position:-182px -82px; cursor:pointer;}
+.login-head .close:hover{ background-position:-157px -82px;}
+
+.login-content{ padding:15px 20px 0 20px; position:relative; zoom:1;}
+.login-hd{ padding:0 0 5px; overflow:hidden; zoom:1;}
+.login-hd h3{ float:left; font:14px/24px arial;}
+.login-hd a{ float:right; padding:0 0 0 17px; font:12px/24px arial;}
+.login-hd .phone-login{ background-position:-280px -114px;color:#333;}
+.login-hd .common-login{ background-position:-276px -138px;color:#333;}
+
+.form-item{ position:relative; margin:0 0 7px; padding: 12px 5px; height: 14px; border:1px solid #ccc;}
+.form-item .label{ position:absolute; top:8px; left:5px; font:12px/22px "Arial"; color:#aaa;}
+.form-item .text{ display:block; width:278px; height: 14px;  font: 12px/14px "Arial"; border:0 none;}
+.form-item-wrong{ border:1px solid #ff3333;}
+
+.form-other{ padding:0 0 17px; overflow:hidden; zoom:1;}
+.autologon{ float:left; color:#666;}
+.autologon input{ margin:0 8px 0 0; +margin:-1px 5px 0 -3px; _margin:-3px 5px 0 -4px;}
+.form-other a{ float:right;color:#36c;}
+.form-other a:hover{ color:#c00;}
+.login-layer-btn,.submit-loading{ display:block; margin:0 0 10px; width:290px; height:40px; font:bold 14px/40px "Arial"; color:#fff; text-align:center; border:0 none; background-position:0 0;}
+.login-layer-btn{ cursor:pointer;}
+.login-layer-btn:hover{ background-position:0 -41px;}
+
+.login-wrong-tips{ display:none; margin:0 0 10px; padding:0 0 0 25px; width:263px; height:22px; font:12px/22px "Arial"; color:#ff3333; border:1px solid #ff9999; background-color:#fff2f2; background-position:-270px -89px;}
+.case-tips{ display:none;position:absolute; top:26px; left:30px; padding:0 10px; border:1px solid #ffd24c; background:#fff5d6; font:12px/28px "Arial"; color:#666; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+.case-tips .ico{ position:absolute; top:-5px; left:10px; display:block; width:9px; height:5px; font:0/0 "Arial"; background-position:-212px -89px;}
+
+.username{ z-index:2; margin:0 0 10px;}
+input:focus {outline: none}
+.account-list{ position:absolute; top:38px; left:-1px; width:288px; border:1px solid #ccc; background:#fff;}
+.account-list li{ padding:0 6px; height:30px; font:12px/30px "Arial"; color:#333; cursor:pointer;}
+.account-list li:hover,.account-list .hover{ background:#ededed;}
+
+.login-foot{ margin:10px 0 0; padding:12px 20px 11px; background:#fafafa;}
+.login-foot span{ float:left; font:12px/38px "Arial";color:#666;padding:0 2px 0 0;}
+.login-foot .sina,.login-foot .qq,.login-foot .alipay,.login-foot .baidu{ float:left; margin:0 12px 0 0; width:38px; height:38px; text-indent:-9999em; overflow:hidden;}
+.login-foot .sina{ background-position:0 -82px;}
+.login-foot .qq{ background-position:-39px -82px}
+.login-foot .alipay{ background-position:-78px -82px;}
+.login-foot .baidu{ background-position:-117px -82px;}
+.login-foot .sina:hover{ background-position:0 -121px;}
+.login-foot .qq:hover{ background-position:-39px -121px}
+.login-foot .alipay:hover{ background-position:-78px -121px;}
+.login-foot .baidu:hover{ background-position:-117px -121px;}
+
+.phone-number{ margin:0 0 10px; z-index:2;}
+.phone-number .text{ width:173px;}
+.phone-number .btn,.captcha-loading{ position:absolute; top:0; right:0; width:109px; height:38px; font:12px/38px arial; background:#f8f8f8; border:0 none; border-left:1px solid #ccc; cursor:pointer;}
+.phone-number .btn:hover{ background:#f2f2f2;}
+.captcha-loading{ cursor:default; background:#f2f2f2; color:#999; text-align:center;}
+
+.captcha-item{ overflow:hidden; zoom:1; margin:10px 0 7px; padding:0; height:40px; border:0 none;}
+.captcha-item .text{ float:left; width:168px;  padding: 8px 5px; height: 22px; border: 1px solid #ccc;}
+.captcha-item img{ float:right;}
